@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Monthsary</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <div class="text">
+                <p>Happy 1st monthsary my bebe Feo. For the second time, I'm sorry for this simple monthsary gift. For now, this is only I can afford but don't worry I'll make our future better. I'm grateful for you, bebe. I hope we help ourselves to make our relationship work. I wish I'm with you through thick and thin, everytime and everyday.</p>
+            </div>
+        </div>
+        <div class="slide fade">
+            <div class="text">
+                <p>Ang daming nangyari sa buwan na to 'no? Bawat tawa mo, bawat pagtotoyo mo, bawat kiss mo sakin, di ko malilimutan yang mga yan. Thankful din ako sa efforts na ginawa mo sa mga pagsama sakin sa oras na down ako, sa pag aayos mo everytime na makikita mo ako, at lalo na sa bracelet and wallet na bigay mo. Iingatan ko to ng buong buhay ko at kung masira man ito eh iki-keep ko ito hanggang sa huling paghinga ko.</p>
+            </div>
+        </div>
+        <div class="slide fade">
+            <div class="text">
+                <p>Sana eh mabigay ko yung mga gusto at minimithi mong mangyari bilang nobyo mo. Pinagpe-pray ko na sana gabayan tayo ng lumikha sa ating mga gustong mangyari sa buhay natin and of course sa relationship natin. Wish ko lang satin eh galingan natin sa acads and more bebe time with more mwamwa siyempre HEHEHEHE.</p>
+            </div>
+        </div>
+        <div class="slide fade">
+            <div class="text">
+                <p>Thank you for everything my bebe. Again Happy 1st Monthsary to us! Hope we can make it! I love you so much bebe.</p>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
